@@ -35,7 +35,7 @@ html {
   /* Individual Event Card */
   .event-card {
     background-color: #ffffff !important;
-    border: 1px solid #075674 !important;
+    border: 1px solid #467750 !important;
     border-radius: 0.75rem !important;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
     transition: border-color 0.2s ease !important;
@@ -74,7 +74,7 @@ html {
     font-size: 2rem !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
-    color: #111827 !important;
+    color: #2a3f3f !important;
     margin-bottom: 1.25rem !important;
     font-family: 'Roboto', sans-serif !important;
   }

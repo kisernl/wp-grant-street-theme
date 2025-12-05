@@ -6,8 +6,8 @@
 ?>
 
 <section class="py-16">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto">
+  <div class="mx-4 md:mx-24 md:my-12">
+    <div class="mx-auto">
       
       <!-- Verse Block Container -->
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-gs-off-white/50 rounded-lg">
@@ -24,7 +24,7 @@
         </div>
         
         <!-- Content - Right Column -->
-        <div class="w-full md:w-1/2 flex flex-col space-y-36">
+        <div class="w-full md:w-1/2 flex flex-col space-y-36 pr-8">
           
           <!-- Title -->
           <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-title leading-tight">

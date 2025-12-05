@@ -5,17 +5,17 @@
       
       <!-- Column 1: Church Logo and Name -->
       <div class="space-y-4">
-        <div class="flex items-center space-x-3">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tvcsg-w.svg" 
-               alt="The Village Church of Saint George Logo" 
-               class="w-16 h-auto">
+        <div class="flex items-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gsbc-logo-w.png" 
+               alt="Grant Street Baptist Church Logo" 
+               class="w-16 h-auto -ml-4">
           <div>
-            <h3 class="font-sans font-bold text-lg leading-tight">The Village Church</h3>
-            <p class="text-sm text-white/80 font-sans">of Saint George</p>
+            <h3 class="font-title font-bold text-xl leading-tight">Grant Street</h3>
+            <p class="text-sm text-white/80 font-body">Baptist Church</p>
           </div>
         </div>
-        <p class="text-sm text-white/80 font-serif leading-relaxed">
-          <em>Building Bridges<br/>Seeking Peace<br/>Sharing Jesus</em>
+        <p class="text-sm text-white/80 font-body leading-relaxed">
+          <em>A Going Church for the Coming Christ!</em>
         </p>
       </div>
 

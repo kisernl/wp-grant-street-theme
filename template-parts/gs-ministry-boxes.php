@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="py-20 md:bg-white">
+<section class="py-20">
   <div class="my-8 px-4 py-12 md:py-8 md:m-8 md:p-12 rounded-xl relative overflow-hidden" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-design-orange.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
     <!-- Ministry Boxes Grid - Responsive Layout -->

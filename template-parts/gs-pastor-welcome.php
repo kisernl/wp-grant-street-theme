@@ -1,5 +1,5 @@
 <!-- Pastor Welcome Section -->
-<section class="py-32 md:px-32 bg-gradient-to-b from-primary/20 to-transparent">
+<section class="pt-12 pb-32 md:px-32">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Welcome Letter - Left Side -->

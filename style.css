@@ -720,6 +720,10 @@ video {
   margin: 2rem;
 }
 
+.-m-2 {
+  margin: -0.5rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -859,6 +863,14 @@ video {
   margin-top: 2rem;
 }
 
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
+.-ml-4 {
+  margin-left: -1rem;
+}
+
 .block {
   display: block;
 }
@@ -967,12 +979,8 @@ video {
   height: 2rem;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[300px\] {
-  height: 300px;
+.h-\[280px\] {
+  height: 280px;
 }
 
 .h-\[400px\] {
@@ -997,10 +1005,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[280px\] {
-  height: 280px;
 }
 
 .min-h-\[400px\] {
@@ -1063,21 +1067,13 @@ video {
   width: auto;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-72 {
@@ -1122,10 +1118,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .flex-1 {
@@ -1291,6 +1283,12 @@ video {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-36 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(9rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(9rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1309,16 +1307,10 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-24 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-}
-
-.space-y-36 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(9rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(9rem * var(--tw-space-y-reverse));
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1524,6 +1516,10 @@ video {
   background-color: rgb(42 63 63 / 0.5);
 }
 
+.bg-primary\/80 {
+  background-color: rgb(42 63 63 / 0.8);
+}
+
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
@@ -1608,37 +1604,8 @@ video {
   background-color: rgb(255 255 255 / 0.95);
 }
 
-.bg-gs-green\/50 {
-  background-color: rgb(70 119 80 / 0.5);
-}
-
-.bg-gs-cream {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 253 232 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gs-cream\/20 {
-  background-color: rgb(255 253 232 / 0.2);
-}
-
-.bg-gs-cream\/50 {
-  background-color: rgb(255 253 232 / 0.5);
-}
-
-.bg-gs-off-white\/30 {
-  background-color: rgb(224 232 226 / 0.3);
-}
-
-.bg-primary\/80 {
-  background-color: rgb(42 63 63 / 0.8);
-}
-
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
-}
-
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-br {
@@ -1892,6 +1859,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1906,6 +1877,10 @@ video {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-12 {
@@ -2319,7 +2294,7 @@ html {
 
 .event-card {
   background-color: #ffffff !important;
-  border: 1px solid #075674 !important;
+  border: 1px solid #467750 !important;
   border-radius: 0.75rem !important;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   transition: border-color 0.2s ease !important;
@@ -2362,7 +2337,7 @@ html {
   font-size: 2rem !important;
   line-height: 1.5 !important;
   font-weight: 600 !important;
-  color: #111827 !important;
+  color: #2a3f3f !important;
   margin-bottom: 1.25rem !important;
   font-family: 'Roboto', sans-serif !important;
 }
@@ -3265,6 +3240,10 @@ html {
   background-color: rgb(42 63 63 / 0.05);
 }
 
+.hover\:bg-primary\/60:hover {
+  background-color: rgb(42 63 63 / 0.6);
+}
+
 .hover\:bg-primary\/80:hover {
   background-color: rgb(42 63 63 / 0.8);
 }
@@ -3298,10 +3277,6 @@ html {
 
 .hover\:bg-white\/90:hover {
   background-color: rgb(255 255 255 / 0.9);
-}
-
-.hover\:bg-primary\/60:hover {
-  background-color: rgb(42 63 63 / 0.6);
 }
 
 .hover\:text-green-700:hover {
@@ -3514,16 +3489,8 @@ html {
     height: 70vh;
   }
 
-  .md\:h-auto {
-    height: auto;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
   }
 
   .md\:grid-cols-2 {
