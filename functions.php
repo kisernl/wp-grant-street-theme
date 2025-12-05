@@ -5,7 +5,7 @@ class Primary_Menu_Walker extends Walker_Nav_Menu {
     // Start the list before the elements are added
     public function start_lvl(&$output, $depth = 0, $args = null) {
         if ($depth == 0) {
-            $output .= '<div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 z-[60] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-sm border border-gray-100">';
+            $output .= '<div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 z-[9999] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-sm border border-gray-100" style="isolation: isolate;">';
         }
     }
     
@@ -86,7 +86,7 @@ class Primary_Menu_Walker_Dark extends Walker_Nav_Menu {
     // Start the list before the elements are added
     public function start_lvl(&$output, $depth = 0, $args = null) {
         if ($depth == 0) {
-            $output .= '<div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 z-[60] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-sm border border-gray-100">';
+            $output .= '<div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 z-[9999] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-sm border border-gray-100" style="isolation: isolate;">';
         }
     }
     

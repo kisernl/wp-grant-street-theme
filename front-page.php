@@ -9,7 +9,7 @@
       <?php get_template_part('template-parts/announcement-block'); ?>
     </div>
     
-    <div class="bg-white py-16">
+    <div class="bg-white pt-16">
       <?php get_template_part('template-parts/gs-weekly-details'); ?>
     </div>
 
@@ -24,13 +24,13 @@
 
 
 
-    <div class="">
+    <div class="-mt-12">
       <?php get_template_part('template-parts/gs-pastor-welcome'); ?>
     </div>
     
   </div>
 
-<div class="bg-white pt-32 pb-12">
+<div class="bg-white py-32">
       <?php
       // Check for upcoming events using the correct field names from Event Cards Simple plugin
       $today = date('Y-m-d');
@@ -86,9 +86,9 @@
       endif; 
       wp_reset_postdata();
       ?>
-      <div class="flex justify-center py-12">
+      <!-- <div class="flex justify-center py-12">
         <div class="w-24 border-b-2 border-primary/80"></div>
-      </div>
+      </div> -->
 </div>
 
 </main>

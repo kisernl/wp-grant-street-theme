@@ -825,3 +825,25 @@ html {
     margin: 0 !important;
   }
 }
+
+/* Navbar Dropdown Fixes */
+nav[style*="isolation"] {
+  position: relative;
+  z-index: 50;
+}
+
+/* Ensure dropdown menus appear above all content */
+.group .absolute {
+  z-index: 9999 !important;
+  position: absolute !important;
+}
+
+/* Prevent stacking context issues with hero sections */
+section {
+  isolation: auto;
+}
+
+/* Ensure navbar dropdowns are properly positioned */
+.group:hover .absolute {
+  pointer-events: auto;
+}
