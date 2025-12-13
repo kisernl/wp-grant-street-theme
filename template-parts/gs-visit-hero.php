@@ -10,7 +10,7 @@
 <section 
   class="h-[50vh] md:h-[70vh] rounded-b-xl md:rounded-xl flex items-end mb-16 justify-start relative"
   style="
-    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/connect-hero.webp');
+    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/family-walking.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;"
@@ -19,13 +19,13 @@
   <div class="px-6 md:px-8 relative z-10">
     <div class="space-y-4 mt-32 mb-12 md:mb-16 md:ml-8">
       <h1 class="text-4xl sm:text-4xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg mb-4 font-title">
-         Connect
+         New Here?
       </h1>
 
       
       <div class="font-sans">
         <p class="text-lg md:text-xl text-white max-w-3xl drop-shadow-lg font-body">
-          Life is meant to be lived together. 
+          We're so glad you're checking out Grant Street Baptist Church! Whether you're new to church or looking for a place to belong, we'd love to welcome you.
         </p>
       </div>
 

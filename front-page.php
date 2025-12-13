@@ -1,19 +1,19 @@
 <?php get_header(); ?>
 
-<main class="bg-white">
-    <div class="bg-gs-off-white/50">
+<main class="bg-gs-off-white/50">
+    <div class="">
       <?php get_template_part('template-parts/gs-home-hero'); ?>
     </div>
     
-    <div class="bg-gs-off-white/50">
+    <div class="">
       <?php get_template_part('template-parts/announcement-block'); ?>
     </div>
     
-    <div class="bg-white pt-16">
+    <div class="bg-white py-16">
       <?php get_template_part('template-parts/gs-weekly-details'); ?>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-white pb-16">
       <?php get_template_part('template-parts/gs-verse-block'); ?>
     </div>
     

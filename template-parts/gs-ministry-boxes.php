@@ -61,11 +61,11 @@
               </div>
             </a>
 
-      <!-- Sermons -->
-      <a href="/resources" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
+      <!-- Bible Studies -->
+      <a href="/connect#studies" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
         <img 
           src="<?php echo get_template_directory_uri(); ?>/assets/images/bible-reading-sm.jpg" 
-          alt="Sermons" 
+          alt="Bible Studies" 
           class="w-full h-full object-cover"
         />
         <!-- Button color overlay -->
@@ -73,7 +73,7 @@
         <!-- Bottom overlay only for text contrast -->
         <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-4">
-          <h3 class="text-2xl font-bold text-white mb-1 font-title">Sermons</h3>
+          <h3 class="text-2xl font-bold text-white mb-1 font-title">Bible Studies</h3>
           <p class="text-white/90 text-sm font-body">Being shaped by God's Word together</p>
         </div>
       </a>

@@ -196,6 +196,7 @@ html {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
     transition: border-color 0.2s ease !important;
     overflow: hidden !important;
+    padding: 0.5rem !important;
   }
 
   .staff-card:hover {
@@ -205,16 +206,21 @@ html {
   }
 
   /* Staff Card Image */
-  .staff-card-image {
-    overflow: hidden !important;
-  }
+.staff-card-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* This creates a square aspect ratio */
+  overflow: hidden; /* Keeps the image contained within the square */
+}
 
-  .staff-card-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: none !important;
-  }
+.staff-card-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
 
   .staff-card:hover .staff-card-image img {
     transform: none !important;

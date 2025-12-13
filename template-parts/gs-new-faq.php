@@ -144,14 +144,14 @@
       </div>
 
     </div>
-    <div class="pt-16">
+    <!-- <div class="pt-16">
       <a 
         href="<?php echo home_url('/about'); ?>" 
         class="inline-block bg-secondary/90 px-8 py-3 text-white text-lg font-medium hover:bg-secondary/70 transition-colors duration-200 rounded-lg shadow-md hover:shadow-lg"
       >
         More About Us
       </a>
-    </div>
+    </div> -->
 
   </div>
 </section>

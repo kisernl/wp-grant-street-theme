@@ -5,18 +5,18 @@
  */
 ?>
 
-<section class="py-16">
-  <div class="mx-4 md:mx-24">
+<section class="">
+  <div class="md:mx-24 md:my-12">
     <div class="mx-auto">
       
       <!-- Verse Block Container -->
-      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-gs-off-white/50 rounded-lg">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-gs-green/20 rounded-lg">
         
         <!-- Square Image - Left Column -->
         <div class="w-full md:w-1/2 flex justify-center">
           <div class="aspect-square">
             <img 
-              src="<?php echo get_template_directory_uri(); ?>/assets/images/friends-1.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/images/our-beliefs.webp"
               alt="Bible Reading" 
               class="w-full h-full object-cover rounded-lg shadow-lg"
             />
@@ -28,18 +28,18 @@
           
           <!-- Title -->
           <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-title leading-tight">
-            Hear the Heart of Jesus
+            The Great Commission
           </h2>
           
           <!-- Bible Verse -->
           <div class="space-y-4 flex flex-col">
             <blockquote class="text-lg md:text-xl text-primary/90 font-body leading-relaxed italic">
-              "Come to me, all who labor and are heavy laden, and I will give you rest."
+              "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you."
             </blockquote>
             
             <!-- Verse Reference -->
             <cite class="text-base md:text-lg font-semibold text-primary/80 font-title not-italic">
-              — Matthew 11:28
+              — Matthew 28:19-20
             </cite>
 
             <!-- CTA Button -->

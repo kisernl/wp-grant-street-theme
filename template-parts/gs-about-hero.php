@@ -8,7 +8,7 @@
 ?>
 
 <section 
-  class="h-[50vh] md:h-[70vh] rounded-b-xl md:rounded-xl flex items-end mb-16 justify-start relative bg-transparent"
+  class="h-[50vh] md:h-[70vh] rounded-b-xl md:rounded-xl flex items-end justify-start relative bg-gs-off-white/50"
   style="
     background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/about-hero.webp');
     background-size: cover;

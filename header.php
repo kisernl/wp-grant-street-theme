@@ -6,4 +6,6 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+  <div class="bg-gs-off-white/50">
   <?php get_template_part('template-parts/navbar'); ?>
+  </div>

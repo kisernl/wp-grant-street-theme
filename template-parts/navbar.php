@@ -1,4 +1,4 @@
-<nav class="absolute top-0 left-0 right-0 p-4 z-50 transition-all duration-300 md:rounded-lg bg-gs-off-white/50 backdrop-blur-md" x-data="{ isOpen: false }" style="isolation: isolate;">
+<nav class="absolute top-0 left-0 right-0 p-4 z-50 transition-all duration-300 md:rounded-lg" x-data="{ isOpen: false }" style="isolation: isolate;">
   <div class="mx-auto md:px-8 px-4 py-0 text-primary">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
