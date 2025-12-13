@@ -29,7 +29,7 @@
         ]);
         ?>
         <div class="flex items-center space-x-8">
-          <a href="#" class="focus:outline-none font-sans px-8 py-2 rounded-lg transition-all duration-300 border border-primary text-primary bg-transparent hover:bg-button/20">Livestream</a>
+          <a href="https://www.facebook.com/GrantStreetBC/live" target="_blank" rel="noopener" class="focus:outline-none font-sans px-8 py-2 rounded-lg transition-all duration-300 border border-primary text-primary bg-transparent hover:bg-button/20">Livestream</a>
         </div>
         <div class="flex items-center space-x-8">
           <a href="/visit" class="focus:outline-none font-sans px-8 py-2 rounded-lg transition-all duration-300 border border-primary text-white bg-primary hover:bg-primary/80">Visit</a>

@@ -25,8 +25,8 @@
                      <div class="text-center mb-12 md:mb-0">
                          <h3 class="text-3xl font-title font-semibold text-primary mb-8">Find Us</h3>
                          <div class="space-y-2 text-gray-700">
-                             <p>202 N Parler Ave<br>St George, SC 29477</p>
-                             <a href="https://maps.app.goo.gl/eTN2RPvEGJZuXCkh8" target="_blank" 
+                             <p>724 Grant St<br>Bessemer, AL 35020</p>
+                             <a href="https://maps.app.goo.gl/CdDWWdZvZ6nX2Btu6" target="_blank" 
                                 class="inline-block mt-3 text-primary hover:text-primary/80 font-medium">
                                  Get Directions →
                              </a>
@@ -38,11 +38,11 @@
                          <h3 class="text-3xl font-title font-semibold text-primary mb-8">Contact Us</h3>
                          <div class="space-y-2 text-gray-700">
                              <p><strong>Phone</strong><br>
-                                <a href="tel:+18434089736" class="hover:text-primary">843-408-9736</a>
+                                <a href="tel:+12054262323" class="hover:text-primary">205-426-2323</a>
                              </p>
                              <p><strong>Email</strong><br>
-                                <a href="mailto:info@tvcstgeorge.com" class="hover:text-primary">
-                                   info@tvcstgeorge.com
+                                <a href="mailto:church@grantstreetbc.com" class="hover:text-primary">
+                                   church@grantstreetbc.com
                                 </a>
                              </p>
                          </div>

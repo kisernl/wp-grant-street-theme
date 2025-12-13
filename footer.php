@@ -30,8 +30,8 @@
           <a href="<?php echo home_url(); ?>" class="block text-white/80 hover:text-white transition-colors">Home</a>
           <a href="<?php echo home_url('/about'); ?>" class="block text-white/80 hover:text-white transition-colors">About</a>
           <a href="<?php echo home_url('/connect'); ?>" class="block text-white/80 hover:text-white transition-colors">Connect</a>
-          <a href="<?php echo home_url('/resources'); ?>" class="block text-white/80 hover:text-white transition-colors">Resources</a>
           <a href="<?php echo home_url('/events'); ?>" class="block text-white/80 hover:text-white transition-colors">Events</a>
+          <a href="<?php echo home_url('/give'); ?>" class="block text-white/80 hover:text-white transition-colors">Give</a>
           <a href="<?php echo home_url('/contact'); ?>" class="block text-white/80 hover:text-white transition-colors">Contact</a>
         </nav>
       </div>

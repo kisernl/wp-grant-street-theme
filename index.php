@@ -1,14 +1,9 @@
 <?php get_header(); ?>
 
-<div class="parallax-container">
-  <!-- Fixed parallax background -->
-  <div class="parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-design-4.webp');"></div>
-  
-  <!-- Scrollable content -->
-  <div class="parallax-content">
+<div class="bg-gs-off-white/50">
     
     <!-- Blog Hero Section -->
-    <div class="content-section md:m-8 rounded-b-xl">
+    <div class="content-section md:px-8 rounded-b-xl">
       <section class="h-[50vh] md:h-[70vh] rounded-b-xl md:rounded-xl flex items-end mb-16 justify-start relative"
                style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/news-hero.webp');
                       background-size: cover;

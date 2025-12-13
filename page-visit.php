@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="bg-gs-off-white/50">
-    <div class="content-section md:p-8 rounded-b-xl">
+    <div class="content-section md:px-8 rounded-b-xl">
       <?php get_template_part('template-parts/gs-visit-hero'); ?>
     </div>
     <div class="m-2 md:m-8 rounded-xl bg-white">

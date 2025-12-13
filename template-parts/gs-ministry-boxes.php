@@ -11,7 +11,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <!-- Kids Ministry -->
-      <a href="/connect#kids-ministry" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
+      <a href="/connect#kids" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
         <img 
           src="<?php echo get_template_directory_uri(); ?>/assets/images/kids-min-2.jpg" 
           alt="Kids Ministry" 
@@ -45,7 +45,7 @@
       </a>
       
       <!-- Youth -->
-      <a href="/connect#youth-ministry" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
+      <a href="/connect#youth" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[280px]">
               <img 
                 src="<?php echo get_template_directory_uri(); ?>/assets/images/youth-min-sm.webp" 
                 alt="Youth" 
