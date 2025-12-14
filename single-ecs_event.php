@@ -1,16 +1,11 @@
-<?php get_header('single'); ?>
+<?php get_header(); ?>
 
-<div class="parallax-container">
-  <!-- Fixed parallax background -->
-  <div class="parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-design-4.webp');"></div>
-  
-  <!-- Scrollable content -->
-  <div class="parallax-content">
+<div class="">
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
     <!-- Event Hero Header Section -->
-    <section class="relative md:py-8 lg:py-16">
+    <section class="">
         
         
     </section>
