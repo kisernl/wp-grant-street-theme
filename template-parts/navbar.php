@@ -103,7 +103,7 @@
         'walker' => new Mobile_Menu_Walker(),
       ]);
       ?>
-      <div class="py-4 border-t border-white/20">
+      <div class="py-4">
         <a href="https://www.facebook.com/GrantStreetBC/live" target="_blank" rel="noopener" class="block w-full text-center text-lg font-sans text-white font-bold py-3 border border-white rounded-lg hover:bg-white/10 transition-colors mb-4">Livestream</a>
         <a href="/visit" class="block w-full text-center text-lg font-sans text-primary bg-white font-bold py-3 rounded-lg hover:bg-white/90 transition-colors">Visit</a>
       </div>
