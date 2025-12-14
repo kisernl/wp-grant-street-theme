@@ -168,11 +168,11 @@ class Mobile_Menu_Walker extends Walker_Nav_Menu {
     // Start the list before the elements are added
     public function start_lvl(&$output, $depth = 0, $args = null) {
         if ($depth == 0) {
-            $output .= '<div x-show="submenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-95" class="mt-2 pl-4 space-y-2 border-l-2 border-gray-200">';
+            $output .= '<div x-show="submenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-95" class="mt-2 pl-4 space-y-2 border-l-2 border-white/20">';
             
             // Add simple right arrow link to parent page
             if ($this->current_parent_item && !empty($this->current_parent_item->url) && $this->current_parent_item->url !== '#') {
-                $output .= '<a href="' . esc_url($this->current_parent_item->url) . '" class="block py-1 text-gray-500 hover:text-primary transition-colors" @click="isOpen = false">';
+                $output .= '<a href="' . esc_url($this->current_parent_item->url) . '" class="block py-1 text-white/60 hover:text-white transition-colors" @click="isOpen = false">';
                 $output .= '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">';
                 $output .= '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6l6 6-6 6"></path>';
                 $output .= '</svg>';
@@ -202,7 +202,7 @@ class Mobile_Menu_Walker extends Walker_Nav_Menu {
         
         if ($depth == 0) {
             // Top level items
-            $active_class = $is_active ? 'text-primary' : 'text-primary hover:text-primary/80';
+            $active_class = $is_active ? 'text-white' : 'text-white hover:text-white/80';
             
             if ($has_children) {
                 // Store parent item for use in submenu
@@ -236,11 +236,11 @@ class Mobile_Menu_Walker extends Walker_Nav_Menu {
         } else {
             // Submenu items (children)
             $indent_class = $depth > 1 ? 'pl-' . ($depth * 4) : '';
-            $active_class = $is_active ? 'text-primary bg-transparent' : 'text-gray-700 hover:text-primary';
+            $active_class = $is_active ? 'text-white bg-transparent' : 'text-white/80 hover:text-white';
             
             $attributes = '';
             $attributes .= !empty($item->url) ? ' href="' . esc_url($item->url) . '"' : '';
-            $attributes .= ' class="block py-2 text-base font-medium transition-colors ' . $active_class . ' ' . $indent_class . ' hover:bg-gray-50"';
+            $attributes .= ' class="block py-2 text-base font-medium transition-colors ' . $active_class . ' ' . $indent_class . ' hover:bg-white/10"';
             $attributes .= ' @click="isOpen = false"';
             
             $title = apply_filters('the_title', $item->title, $item->ID);

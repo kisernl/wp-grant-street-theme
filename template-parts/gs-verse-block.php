@@ -24,7 +24,7 @@
         </div>
         
         <!-- Content - Right Column -->
-        <div class="w-full md:w-1/2 flex flex-col space-y-36 pr-8">
+        <div class="w-full md:w-1/2 flex flex-col space-y-36 p-8 md:pr-8">
           
           <!-- Title -->
           <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-title leading-tight">

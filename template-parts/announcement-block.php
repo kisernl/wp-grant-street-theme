@@ -30,7 +30,7 @@ if (!$show_announcement || (empty($announcement_title) && empty($announcement_bo
       <!-- Content -->
       <div class="space-y-6">
         <?php if (!empty($announcement_title)): ?>
-          <h2 class="text-2xl md:text-4xl font-bold text-primary-text font-title leading-tight">
+          <h2 class="text-4xl font-bold text-primary-text font-title leading-tight">
             <?php echo esc_html($announcement_title); ?>
           </h2>
         <?php endif; ?>

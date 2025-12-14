@@ -600,6 +600,10 @@ video {
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1359,6 +1363,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1844,6 +1852,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-10 {
@@ -3461,6 +3473,14 @@ section {
   background-color: rgb(137 192 126 / 0.1);
 }
 
+.hover\:bg-primary\/10:hover {
+  background-color: rgb(42 63 63 / 0.1);
+}
+
+.hover\:bg-white\/10:hover {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
 .hover\:text-green-700:hover {
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity, 1));
@@ -3482,6 +3502,14 @@ section {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-white\/70:hover {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.hover\:text-white\/80:hover {
+  color: rgb(255 255 255 / 0.8);
 }
 
 .hover\:underline:hover {
@@ -3593,6 +3621,11 @@ section {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3647,6 +3680,11 @@ section {
   .md\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .md\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .md\:mb-0 {
@@ -3759,6 +3797,11 @@ section {
     border-radius: 0.75rem;
   }
 
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
   .md\:border-l-2 {
     border-left-width: 2px;
   }
@@ -3840,12 +3883,25 @@ section {
     padding-bottom: 2rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .md\:text-2xl {
