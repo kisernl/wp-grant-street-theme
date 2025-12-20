@@ -8,9 +8,9 @@
     </div>
 
      
-    <!-- Standing Events Section -->
+    <!-- Calendar Events Section -->
     <div class="pb-16">
-      <?php get_template_part('template-parts/gs-standing-events'); ?>
+    <?php get_template_part('template-parts/gs-calendar'); ?>
     </div>
    
 

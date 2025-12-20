@@ -7,7 +7,7 @@
 <section 
   class="h-[80vh] rounded-b-xl md:rounded-xl flex items-end md:mx-12 justify-start relative"
   style="
-    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.webp');
+    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/gs-worship-8.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;"

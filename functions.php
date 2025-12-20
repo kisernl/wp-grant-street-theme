@@ -591,3 +591,164 @@ function enqueue_sermon_archive_scripts() {
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_sermon_archive_scripts');
+
+// Register Calendar Events Custom Post Type
+function gs_register_calendar_events_cpt() {
+    $labels = array(
+        'name'                  => 'Calendar Events',
+        'singular_name'         => 'Calendar Event',
+        'menu_name'             => 'Calendar Events',
+        'add_new'               => 'Add New Event',
+        'add_new_item'          => 'Add New Calendar Event',
+        'edit_item'             => 'Edit Calendar Event',
+        'new_item'              => 'New Calendar Event',
+        'view_item'             => 'View Calendar Event',
+        'search_items'          => 'Search Calendar Events',
+        'not_found'             => 'No calendar events found',
+        'not_found_in_trash'    => 'No calendar events found in trash',
+        'all_items'             => 'All Calendar Events',
+    );
+
+    $args = array(
+        'labels'                => $labels,
+        'public'                => true,
+        'has_archive'           => false,
+        'publicly_queryable'    => false,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_icon'             => 'dashicons-calendar-alt',
+        'supports'              => array('title'),
+        'rewrite'               => false,
+        'capability_type'       => 'post',
+        'show_in_rest'          => false,
+    );
+
+    register_post_type('gs_calendar_event', $args);
+}
+add_action('init', 'gs_register_calendar_events_cpt');
+
+// Add Meta Boxes for Calendar Events
+function gs_add_calendar_event_meta_boxes() {
+    add_meta_box(
+        'gs_calendar_event_details',
+        'Event Details',
+        'gs_calendar_event_details_callback',
+        'gs_calendar_event',
+        'normal',
+        'high'
+    );
+}
+add_action('add_meta_boxes', 'gs_add_calendar_event_meta_boxes');
+
+// Meta Box Callback
+function gs_calendar_event_details_callback($post) {
+    wp_nonce_field('gs_calendar_event_details', 'gs_calendar_event_nonce');
+    
+    $event_date = get_post_meta($post->ID, '_gs_event_date', true);
+    $event_details = get_post_meta($post->ID, '_gs_event_details', true);
+    ?>
+    <div style="margin-bottom: 15px;">
+        <label for="gs_event_date" style="display: block; margin-bottom: 5px; font-weight: 600;">Event Date:</label>
+        <input type="date" id="gs_event_date" name="gs_event_date" value="<?php echo esc_attr($event_date); ?>" style="width: 100%; max-width: 300px; padding: 5px;" required />
+        <p style="margin-top: 5px; color: #666; font-size: 13px;">The event will be hidden the day after this date.</p>
+    </div>
+    <div>
+        <label for="gs_event_details" style="display: block; margin-bottom: 5px; font-weight: 600;">Event Details (Optional):</label>
+        <textarea id="gs_event_details" name="gs_event_details" rows="4" style="width: 100%; padding: 5px;"><?php echo esc_textarea($event_details); ?></textarea>
+        <p style="margin-top: 5px; color: #666; font-size: 13px;">Additional information about the event (time, location, etc.)</p>
+    </div>
+    <?php
+}
+
+// Save Meta Box Data
+function gs_save_calendar_event_meta($post_id) {
+    // Check nonce
+    if (!isset($_POST['gs_calendar_event_nonce']) || !wp_verify_nonce($_POST['gs_calendar_event_nonce'], 'gs_calendar_event_details')) {
+        return;
+    }
+
+    // Check autosave
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    // Check permissions
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+
+    // Save event date
+    if (isset($_POST['gs_event_date'])) {
+        update_post_meta($post_id, '_gs_event_date', sanitize_text_field($_POST['gs_event_date']));
+    }
+
+    // Save event details
+    if (isset($_POST['gs_event_details'])) {
+        update_post_meta($post_id, '_gs_event_details', sanitize_textarea_field($_POST['gs_event_details']));
+    }
+}
+add_action('save_post_gs_calendar_event', 'gs_save_calendar_event_meta');
+
+// Add custom columns to admin list
+function gs_calendar_event_columns($columns) {
+    $new_columns = array();
+    $new_columns['cb'] = $columns['cb'];
+    $new_columns['title'] = 'Event Title';
+    $new_columns['event_date'] = 'Event Date';
+    $new_columns['event_details'] = 'Details';
+    $new_columns['date'] = 'Published';
+    return $new_columns;
+}
+add_filter('manage_gs_calendar_event_posts_columns', 'gs_calendar_event_columns');
+
+// Populate custom columns
+function gs_calendar_event_custom_column($column, $post_id) {
+    switch ($column) {
+        case 'event_date':
+            $event_date = get_post_meta($post_id, '_gs_event_date', true);
+            if ($event_date) {
+                $formatted_date = date('F j, Y', strtotime($event_date));
+                echo esc_html($formatted_date);
+                
+                // Add indicator if event is past
+                $today = date('Y-m-d');
+                if ($event_date < $today) {
+                    echo ' <span style="color: #999;">(Past)</span>';
+                }
+            } else {
+                echo '<span style="color: #999;">No date set</span>';
+            }
+            break;
+        case 'event_details':
+            $details = get_post_meta($post_id, '_gs_event_details', true);
+            if ($details) {
+                echo esc_html(wp_trim_words($details, 10));
+            } else {
+                echo '<span style="color: #999;">—</span>';
+            }
+            break;
+    }
+}
+add_action('manage_gs_calendar_event_posts_custom_column', 'gs_calendar_event_custom_column', 10, 2);
+
+// Make event_date column sortable
+function gs_calendar_event_sortable_columns($columns) {
+    $columns['event_date'] = 'event_date';
+    return $columns;
+}
+add_filter('manage_edit-gs_calendar_event_sortable_columns', 'gs_calendar_event_sortable_columns');
+
+// Handle sorting by event date
+function gs_calendar_event_orderby($query) {
+    if (!is_admin() || !$query->is_main_query()) {
+        return;
+    }
+
+    $orderby = $query->get('orderby');
+
+    if ('event_date' === $orderby) {
+        $query->set('meta_key', '_gs_event_date');
+        $query->set('orderby', 'meta_value');
+    }
+}
+add_action('pre_get_posts', 'gs_calendar_event_orderby');

@@ -50,7 +50,7 @@
             <h3 class="text-2xl font-title font-semibold text-primary mb-4">Our Leadership</h3>
             <div class="w-16 h-0.5 bg-primary mx-auto"></div>
             <p class="text-gray-700 my-4">Our board of deacons provide vital oversight and support to our church family. These men are elected from within our congregation and are called to serve with wisdom, humility, and love.</p>
-            <p class="text-gray-700">You can reach our deacons at <a href="mailto:church@grantstreetbaptist.org" class="text-primary hover:underline">church@grantstreetbaptist.org</a>.</p>
+            <p class="text-gray-700">You can reach our deacons at <a href="mailto:church@grantstreetbc.com" class="text-primary hover:underline">church@grantstreetbc.com</a>.</p>
         </div>
     </div>
 
