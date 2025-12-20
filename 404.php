@@ -1,4 +1,4 @@
-<?php get_header('single'); ?>
+<?php get_header(); ?>
 
 <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
   <div class="text-center max-w-md mx-auto">
