@@ -45,7 +45,7 @@
                         <p class="text-muted mb-6">
                             Give securely online using our Stripe form
                         </p>
-                        <a href="https://buy.stripe.com/bJecN6cj9e9z9lB2PqdUY00" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors duration-200">
+                        <a href="https://grantstreetbaptistchurch.betterworld.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors duration-200">
                             Give Online
                             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

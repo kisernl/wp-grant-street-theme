@@ -19,7 +19,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <!-- Email Button -->
                 <a 
-                    href="mailto:pastor@grantstreetbc.org"
+                    href="mailto:church@grantstreetbc.com"
                     class="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-primary bg-white rounded-md hover:bg-gray-100 transition-colors duration-200"
                 >
                     <!-- Mail Icon SVG -->

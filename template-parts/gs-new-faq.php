@@ -35,10 +35,10 @@
           <div class="px-6 pb-6">
             <div class="border-t border-primary/10 pt-4">
               <p class="text-gray-700 leading-relaxed font-body text-lg">
-                We gather every Sunday morning at <strong>10:00 AM</strong> for a cup of coffee and worship begins at 10:15. 
+                We gather every Sunday morning at <strong>10:30 AM</strong> with Sunday School at 9:15 AM. 
               </p>
               <p class="text-gray-700 leading-relaxed font-body text-lg">
-                Our youth group meets on Wednesdays at 6:00 PM.
+                Our prayer meeting is on Wednesdays at 6:00 PM.
               </p>
             </div>
           </div>
@@ -60,10 +60,10 @@
           <div class="px-6 pb-6">
             <div class="border-t border-primary/10 pt-4">
               <p class="text-gray-700 leading-relaxed font-body text-lg mb-4">
-                You can find us at <strong>202 N Parler Ave, St George, SC 29477</strong>. We have free parking available along the street, with reserved spots near the entrance for first-time visitors.
+                You can find us at <strong>724 Grant St, Bessemer, AL 35020</strong>. Just 7 minutes from exit 108 (off I-20).
               </p>
               <a 
-                href="https://maps.google.com/?q=202+N+Parler+Ave,+St+George,+SC+29477" 
+                href="https://maps.google.com/?q=724+Grant+St,+Bessemer,+AL+35020" 
                 target="_blank" 
                 rel="noopener"
                 class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors font-body"
@@ -136,7 +136,7 @@
           <div class="px-6 pb-6">
             <div class="border-t border-primary/10 pt-4">
               <p class="text-gray-700 leading-relaxed font-body text-lg">
-                Our Sunday service is designed to help <strong>find peace and rest</strong>. We have time for coffee, snacks, and fellowship, followed by a service which includes singing, prayer, time share, and a sermon focused on the Word of God
+                Our worship services feature a blend of traditional hymns and a practical, Bible-centered message. Our services typically last about an hour and prioritize relationships (with Jesus and with one another!), so feel free to stay afterward for a handshake and a friendly conversation.
               </p>
             </div>
           </div>

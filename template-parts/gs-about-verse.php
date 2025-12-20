@@ -10,7 +10,7 @@
     <div class="mx-auto">
       
       <!-- Verse Block Container -->
-      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-gs-green/20 rounded-lg">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-gs-green/20 rounded-lg p-4 md:p-0">
         
         <!-- Square Image - Left Column -->
         <div class="w-full md:w-1/2 flex justify-center">

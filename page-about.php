@@ -25,7 +25,7 @@
       </section>
     </div>
 
-    <div class="content-section m-0 md:m-8 pb-12 my-rounded-xl">
+    <div class="m-0 md:m-8 pb-12 my-rounded-xl">
       <?php get_template_part('template-parts/gs-about-verse'); ?>
     </div>
 

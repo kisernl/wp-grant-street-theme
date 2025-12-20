@@ -7,7 +7,7 @@
     </div>
 
      <!-- Simple Three-Column Contact Block -->
-     <section class="m-16 my-24 p-12 md:p-12 bg-white items-center">
+     <section class="md:mx-16 my-24 px-2 py-12 md:p-12 bg-white items-center rounded-xl md:rounded-none">
          <div class="container mx-auto px-4">
              <div class="max-w-6xl mx-auto">
                  
@@ -52,11 +52,11 @@
                      <div class="text-center mb-12 md:mb-0">
                          <h3 class="text-3xl font-title font-semibold text-primary mb-8">Connect With Us</h3>
                          <div class="space-y-3">
-                             <a href="https://tally.so/r/2EEy4j" target="_blank" 
-                                class="block w-3/4 mx-auto px-4 py-2 bg-primary text-white rounded hover:bg-primary/90 transition-colors">
+                             <a href="https://tally.so/r/Np5O2b" target="_blank" 
+                                class="block w-3/4 mx-auto px-4 py-2 bg-primary text-white rounded hover:bg-secondary transition-colors">
                                  Connect Card
                              </a>
-                             <a href="https://www.facebook.com/tvcstgeorge" target="_blank" 
+                             <a href="https://www.facebook.com/GrantStreetBC" target="_blank" 
                                 class="block w-3/4 mx-auto px-4 py-2 border border-primary text-primary rounded hover:bg-primary hover:text-white transition-colors">
                                  Facebook
                              </a>
